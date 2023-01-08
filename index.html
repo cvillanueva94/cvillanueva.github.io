@@ -18,9 +18,9 @@
 						xl: '1440px',
 					},
 					fontFamily: {
-						sans: ['Graphik', 'sans-serif'],
-						serif: ['Merriweather', 'serif'],
-						mono: ["SF Mono", "Fira Code", "Fira Mono", "Roboto Mono"],
+						sans: ['Fira Code'],
+						serif: ['Fira Code'],
+						mono: ['Fira Code'],
 					},
 					extend: {
 						spacing: {
@@ -38,21 +38,66 @@
 	</head>
 	<body class="bg-slate-800">
 		
-		<div class="flex justify-items-center">
-			<div class="flex-auto w-1/6 "></div>
-			<div class="flex-auto w-4/6 ">
-				<div class="h-screen grid gap-4 content-center">
-						<p class="text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white font-mono">Hi, my name is</p>
-						<h2 class="text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-200 font-sans">Carlos Villanueva.</h2>
-						<h3 class="text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-500 font-sans">Lorem ipsum dolor sit amet.</h3>
-						<p class="text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-500 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				</div>
+		
+
+		<div class="flex flex-col ">
+			<div class="hidden md:block">
+				<nav class="flex sm:justify-end space-x-4 pt-6 pr-8">
+					<a href="#about" class="rounded-lg px-3 py-2 text-slate-500 font-medium hover:text-slate-50">About</a>
+					<a href="#" class="rounded-lg px-3 py-2 text-slate-500 font-medium hover:text-slate-50">Experience</a>
+					<a href="#" class="rounded-lg px-3 py-2 text-slate-500 font-medium hover:text-slate-50">Work</a>
+					<a href="#" class="rounded-lg px-3 py-2 text-slate-500 font-medium hover:text-slate-50">Contact</a>
+					<a href="#" class="rounded-lg px-3 py-2 text-slate-500 font-medium border-2 border-bg-slate-500 hover:text-slate-50 hover:border-bg-slate-50">Resume</a>
+				</nav>
 			</div>
-			<div class="flex-auto w-1/6 "></div>
+			<div id="home" class="flex justify-items-center">
+				<div class="flex-auto w-1/6 "></div>
+				<div class="flex-auto w-4/6 ">
+					<div class="h-screen grid gap-4 content-center">
+							<p class="antialiased hover:subpixel-antialiased text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white font-mono">Hi, my name is</p>
+							<h2 class="antialiased hover:subpixel-antialiased text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-200 font-sans">Carlos Villanueva.</h2>
+							<h3 class="antialiased hover:subpixel-antialiased text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-500 font-sans">Lorem ipsum dolor sit amet.</h3>
+							<p class="antialiased hover:subpixel-antialiased text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-500 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					</div>
+				</div>
+				<div class="flex-auto w-1/6 "></div>
+			</div>
+			
+			<div id="about" class="flex justify-items-center">
+				<div class="flex-auto w-1/6 "></div>
+				<div class="flex-auto w-4/6 ">
+					<div class="h-screen grid gap-4 content-center">
+						<div class="flex flex-col">
+
+							
+							<div>
+								<h2 class="antialiased hover:subpixel-antialiased text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-200 font-sans">About me</h2>
+							</div>
+							
+							<div class="flex flex-col xs:flex-row md:flex-row">
+								<div class="flex-auto w-auto xs:w-3/6">
+									<p class="antialiased hover:subpixel-antialiased text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-500 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									<p class="antialiased hover:subpixel-antialiased text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-500 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+								<div class="flex-auto w-auto xs:w-1/6"></div>
+								<div class="flex-auto w-auto order-first xs:w-2/6 xs:order-last">
+									<img class="object-cover h-48 w-48 bg-loading" src="https://avatars.githubusercontent.com/u/72270864?s=400&u=aab5513c5cb0f4a82832aa9ffd3fd5e431a26969&v=4">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-auto w-1/6 "></div>
+			</div>
+
+			<div class="bottom-0 text-center mb-6 text-slate-400 hover:text-slate-300">
+				<a href="https://github.com/cvillanueva94/">Designed & Built by cvillanueva94</a>
+			</div>
 		  </div>
 
-		  <footer class="absolute inset-x-0 bottom-0 text-center mb-6 text-slate-400 hover:text-slate-300">
-			<a href="https://github.com/cvillanueva94/">Designed & Built by cvillanueva94</a>
+		  <footer class="absolute inset-x-0 ">
+			
 		</footer>
 	</body>
 </html>
