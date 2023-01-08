@@ -1,17 +1,58 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Carlos Villanueva</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<script>
+			tailwind.config = {
+				theme: {
+					screens: {
+						xs: '360px',
+						sm: '480px',
+						md: '768px',
+						lg: '976px',
+						xl: '1440px',
+					},
+					fontFamily: {
+						sans: ['Graphik', 'sans-serif'],
+						serif: ['Merriweather', 'serif'],
+						mono: ["SF Mono", "Fira Code", "Fira Mono", "Roboto Mono"],
+					},
+					extend: {
+						spacing: {
+							'112': '28rem',
+							'128': '32rem',
+							'144': '36rem',
+						},
+						borderRadius: {
+							'4xl': '2rem',
+						},
+					}
+				},
+			}
+		</script>
 	</head>
-	<body>
-		<p>✌️</p>
+	<body class="bg-slate-800">
+		
+		<div class="flex justify-items-center">
+			<div class="flex-auto w-1/6 "></div>
+			<div class="flex-auto w-4/6 ">
+				<div class="h-screen grid gap-4 content-center">
+						<p class="text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white font-mono">Hi, my name is</p>
+						<h2 class="text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-200 font-sans">Carlos Villanueva.</h2>
+						<h3 class="text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-500 font-sans">Lorem ipsum dolor sit amet.</h3>
+						<p class="text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-500 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+				</div>
+			</div>
+			<div class="flex-auto w-1/6 "></div>
+		  </div>
+
+		  <footer class="absolute inset-x-0 bottom-0 text-center mb-6 text-slate-400 hover:text-slate-300">
+			<a href="https://github.com/cvillanueva94/">Designed & Built by cvillanueva94</a>
+		</footer>
 	</body>
 </html>
